@@ -1,0 +1,63 @@
+<?php
+session_start();
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("location: index.php");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="samtex.png">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <button class="logo-btn">☰</button>
+      <h1>Dashboard</h1>
+    </div>
+    <div class="navbar-right">
+      <button><i class="fa-solid fa-moon"></i></button>
+      <button><a href="index.html">Admin</a></button>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-image">
+        <img src="samtex.png" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="dashboard.html" class="active"><i class="fa-solid fa-gauge"></i>Dashboard</a></li>
+      <li><a href="alarm.html"><i class="fa-solid fa-bell"></i>Alarm</a></li>
+      <li><a href="trends.html"><i class="fa-solid fa-chart-line"></i>Trends</a></li>
+      <li><a href="architecture.html"><i class="fa-thin fa-puzzle-piece"></i>Architecture</a></li>
+      <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <h2>Welcome!</h2>
+    <p>This is the main content area of dashboard.</p>
+  </main>
+  <?php
+  /*$file = fopen("log.txt", "w"); 
+  fwrite($file, "User logged in at " . date("Y-m-d H:i:s") . "\n");
+  fclose($file);
+  echo "Log written successfully!";
+  ?>
+  <?php
+  $file = fopen("log.txt", "r");
+  echo fread($file, filesize("log.txt"));
+  fclose($file);*/
+  ?>
+
+</body>
+</html>
