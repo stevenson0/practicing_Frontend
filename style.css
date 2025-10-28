@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Roboto Mono', monospace; 
+    background:#f9f9f9;
+    color: black;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+.top img{
+    margin-left: 5vw;
+}
+.user-info{
+    margin-right: 10vw;
+    padding: 10px;
+}
+#drop-name{
+    margin: 0;
+    padding: 11px;
+    border-radius: 0;
+    background-color: black;
+}
+.drop-name:hover{
+    border-color: white;
+}
+.top-contents {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.dropdown-menu{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+}
+.dropdown-menu li{
+    padding: 10px;
+    color: black;
+}
+.dropdown-menu li:hover{
+    background-color: black;
+}
+.next-dropdown {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    top: 100%;
+}
+.top-rest{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-direction: row;
+    gap: 10px;
+}
+.section-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+.dashboard { 
+    display:flex; 
+    gap:10px; 
+    flex-wrap:wrap; 
+    justify-content:center; 
+}
+.box { 
+    background:white; 
+    padding:20px; 
+    border:1px solid #ddd; 
+    width:140px; 
+    text-align:center; 
+    border-radius:8px; 
+}
+h3 { 
+    font-size:12px; 
+    color:#555; 
+    margin-bottom:5px; 
+}
+p { 
+    font-size:36px; 
+    margin:0; 
+    font-weight:bold; 
+}
+span { 
+    font-size:14px; 
+    color:#888; 
+}
+.car-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+.car_left_content{  
+    max-width: 300px;
+}
+.car_left_content p{
+    font-size: 1rem;
+    width: 15rem;
+}
+.car_left_content button{
+    border: 1px solid black;
+    padding: 10px 20px;
+    background: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
